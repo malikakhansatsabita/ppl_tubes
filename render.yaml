@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: platiful
+    runtime: node
+    plan: free
+    buildCommand: npm ci --prefix "Back end"
+    startCommand: npm --prefix "Back end" start
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: platiful-db
+          property: connectionString
+      - key: PLATIFUL_IMPORT_JSON_SEED
+        value: "false"
+      - key: DB_SSL
+        value: "false"
+      - key: NODE_ENV
+        value: production
+
+databases:
+  - name: platiful-db
+    databaseName: platiful
+    user: platiful
+    plan: basic-256mb

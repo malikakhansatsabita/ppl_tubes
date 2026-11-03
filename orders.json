@@ -1,0 +1,28 @@
+[
+  {
+    "id": "45dc449a-3687-43ae-8d8b-4e99066f0703",
+    "productId": "415004ca-218e-416e-87b3-cfcbd73160b7",
+    "productName": "Tester Pastry Box",
+    "store": "PLATIFUL Tester Bakery",
+    "storeId": "0742391c-0541-403f-ab11-2acbd8c51799",
+    "customerId": "0aba75b6-5ab0-40e3-baf7-17535741cf29",
+    "customerName": "PLATIFUL Tester Customer",
+    "quantity": 1,
+    "total": 15000,
+    "paymentMethod": "Cash on pickup",
+    "paymentStatus": "Pay at pickup",
+    "status": "Awaiting pickup",
+    "pickupCode": "694457",
+    "createdAt": "2026-10-27T02:25:31.971Z"
+  },
+  {
+    "id": "d7febc73-b0d1-416f-a553-3af65c23bdec",
+    "productId": "food-001",
+    "productName": "Freshly Baked Croissants",
+    "store": "Maison de Pâtisserie",
+    "quantity": 1,
+    "total": 18000,
+    "status": "Awaiting pickup",
+    "createdAt": "2026-10-26T13:23:51.028Z"
+  }
+]

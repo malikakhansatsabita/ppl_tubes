@@ -1,0 +1,13 @@
+[
+  {
+    "id": "9a760064-9b6c-4b40-a0fe-ad89c061918f",
+    "productId": "415004ca-218e-416e-87b3-cfcbd73160b7",
+    "productName": "Tester Pastry Box",
+    "storeId": "0742391c-0541-403f-ab11-2acbd8c51799",
+    "reporterId": "0aba75b6-5ab0-40e3-baf7-17535741cf29",
+    "reason": "Incorrect information",
+    "details": "Contoh laporan untuk menguji moderasi.",
+    "status": "Open",
+    "createdAt": "2026-10-27T02:25:31.912Z"
+  }
+]

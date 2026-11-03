@@ -1,0 +1,8 @@
+Back end/node_modules/
+Back end/data/*.json
+!Back end/data/.gitkeep
+Back end/.env
+.env
+.env.*
+!.env.example
+npm-debug.log*

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLATIFUL — Food Rescue Platform</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="auth.css">
+<link rel="stylesheet" href="app-ui.css?v=12">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  .app:not(.auth-mode) .sidebar {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  .app:not(.auth-mode) .sidebar nav {
+    flex: 0 0 auto;
+    margin-bottom: 16px;
+  }
+
+  /* kartu misi: sembunyi di layar pendek, tampil di layar tinggi */
+  .app:not(.auth-mode) .sidebar-mission {
+    display: none !important;
+    flex: 0 0 auto;
+    margin-bottom: 16px;
+  }
+
+  @media (min-height: 900px) {
+    .app:not(.auth-mode) .sidebar-mission {
+      display: block !important;
+    }
+  }
+
+  /* profil selalu menempel di dasar sidebar */
+  .app:not(.auth-mode) .sidebar-bottom {
+    position: sticky !important;
+    bottom: 0;
+    margin-top: auto !important;
+    padding: 14px 0 6px !important;
+    background: #08171b;
+    z-index: 2;
+  }
+</style>
+<script>
+  if (location.port && location.port !== '3000') {
+    document.addEventListener('DOMContentLoaded', function () {
+      var b = document.createElement('div');
+      b.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:999;background:#7c2d12;color:#fff;padding:10px 16px;font:600 14px sans-serif;text-align:center';
+      b.innerHTML = 'Halaman ini dibuka lewat Live Server, jadi login dan data tidak jalan. Jalankan <code>npm start</code> di folder Back end, lalu buka <a style="color:#fde68a" href="http://localhost:3000">http://localhost:3000</a>';
+      document.body.appendChild(b);
+    });
+  }
+</script>
+</head>
+<body>
+<div class="app" id="app">
+<aside class="sidebar"><div class="brand"><span class="brand-icon">◈</span><div><b>PLATIFUL</b><small>FOOD RESCUE PLATFORM</small></div></div><div class="workspace"><span class="dot"></span> Workspace <span class="chev">⌄</span></div>
+<nav id="nav">
+ </nav><div class="sidebar-bottom"><div class="profile-mini"><div class="avatar">PL</div><div><b>PLATIFUL</b><small>Akun belum dimuat</small></div></div></div></aside>
+<main class="main"><header class="topbar"><div class="crumb">Workspace <span>/</span> <b id="crumb">Sign in</b></div><div class="top-actions"><div class="avatar small">PL</div><button class="btn sm" id="logoutButton" type="button">Keluar</button></div></header><div class="content" id="content"></div></main></div><div class="toast" id="toast"></div><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="script.js?v=2"></script><script src="api-client.js?v=3"></script><script src="auth.js"></script><script src="workflows.js"></script><script src="extras.js?v=1"></script></body></html>

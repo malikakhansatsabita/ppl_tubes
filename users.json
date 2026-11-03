@@ -1,0 +1,37 @@
+[
+  {
+    "id": "0aba75b6-5ab0-40e3-baf7-17535741cf29",
+    "name": "PLATIFUL Tester Customer",
+    "email": "tester.customer.mvq2cmbi@example.test",
+    "role": "customer",
+    "salt": "86a8b76d4e76bd0cbb03330f202df93b",
+    "passwordHash": "3d4eed159112e7a35176ec94cd31f3e846fd8f2d23787f3c0e9657e3685cc44785f89482b7e6d282b15140bda15108b505047f6d39eee1d28280388ed996d251",
+    "favorites": [
+      "0742391c-0541-403f-ab11-2acbd8c51799"
+    ]
+  },
+  {
+    "id": "0742391c-0541-403f-ab11-2acbd8c51799",
+    "name": "PLATIFUL Tester Retailer",
+    "email": "tester.retailer.mvq2cmbi@example.test",
+    "role": "retailer",
+    "store": {
+      "name": "PLATIFUL Tester Bakery",
+      "address": "Jl. Sudirman, Jakarta Pusat",
+      "description": "Listing demo untuk pengujian alur PLATIFUL.",
+      "phone": "",
+      "latitude": -6.2088,
+      "longitude": 106.8456
+    },
+    "salt": "710e5a05d37dab8c086b51aa4c04fb12",
+    "passwordHash": "e6e7796dce93abe4f9de83691fa115a5f4959c56d35936f1edd5f3de4df8178ebed6d0391d2c9378c0bf8a2198fe2acc693030e467bf08f86fde3a836455056a"
+  },
+  {
+    "id": "ae678570-fe75-42bf-8396-06681c9b0345",
+    "name": "PLATIFUL Tester Admin",
+    "email": "tester.admin.mvq2cmbi@example.test",
+    "role": "admin",
+    "salt": "8db0b64b7c3871dc72abe4cd246e0cc2",
+    "passwordHash": "162d1330c93f0dcfca36b7262d1916546b1400b61910aec88dd0c3f4b29ef456a61ea94eafda452bc862df94ffa0c644539f68ccc41e41d6e4de4e7a3536e313"
+  }
+]
